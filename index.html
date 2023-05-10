@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <title>파타고니아</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .gnb > .top {
+      width: 100%;
+      
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end; 
+      gap: 15px;
+
+      background-color: #500778;
+      height: 50px;
+
+      padding: 0px 20px;
+    }
+
+    .gnb > .top > a, .gnb > .top > span {
+      color: white;
+    }
+
+    .gnb > .top > a {
+      text-decoration: none;
+    }
+
+    .gnb > .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0px 20px;
+      height: 70px;
+    
+    }
+    .gnb > .bottom > .left { 
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .gnb > .bottom > .left > img {
+      width: 130px;
+    }
+
+    .gnb > .bottom > .left > span {
+      font-weight: 900;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .left > input {
+      width: 500px;
+      height: 40px;
+      padding: 8px 12px;
+
+      font-size: 16px;
+    }
+
+    .iconWrapper {
+      display: flex;
+      align-items: center;
+
+      gap: 20px;
+    }
+
+    .iconWrapper > i {
+      font-size: 24px;
+    }
+
+    .imageBox > img {
+      width: 100%;
+    }
+
+    .itemBox {
+      margin: 30px;
+      display: flex;
+    }
+    .category {
+      display: flex;
+      flex-direction: column;
+      margin-right: 100px;
+    }
+
+    .category > p {
+      font-size: 25px;
+    }
+
+    .category > span {
+      font-size: 17px;
+      border-bottom: 1px solid lightgray;
+      padding: 10px;
+    }
+    .cloth {
+      display: flex;
+      padding: 10px 30px 30px 30px;
+    }
+    .cloth > div > img {
+      width: 286px;
+    }
+
+    .cloth > div {
+      margin-left: 10px;
+      padding: 10px;
+      border: 1px solid lightgray;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="gnb">
+      <div class="top">
+        <a href="#">Climate Goals</a>
+        <a href="#">푸른 심장</a>
+        <a href="#">Worn Wear</a>
+        <span>|</span>
+        <a href="#">더보기</a>
+      </div>
+
+      <div class="bottom">
+        <div class="left">
+          <img src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/patagonia_main_logo.png"/>
+          <span>SHOP</span>
+          <span>INSIDE PATAGONIA</span>
+          <input placeholder="SEARCH" />
+        </div>
+        <div class="iconWrapper">
+          <i class="bi bi-question-circle-fill"></i>
+          <i class="bi bi-person-fill"></i>
+          <i class="bi bi-cart-fill"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="imageBox">
+      <img src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/patagonia_main_banner.png" />
+    </div>
+
+    <div class="itemBox">
+      <div class="category">
+        <p>WOMEN'S</p>
+        <span>신상품</span>
+        <span>재킷 & 베스트</span>
+        <span>플리스</span>
+        <span>스웨트셔츠 & 후디</span>
+        <span>셔츠</span>
+        <span>티셔츠</span>
+        <span>팬츠 & 레깅스</span>
+        <span>모자 & 액세서리</span>
+      </div>
+      <div class="cloth">
+        <div>
+          <img src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/patagonia_item_1.png" />
+          <p>Women Stand Up Overalls<br/>₩159,000
+          </p>
+        </div>
+        <div>
+          <img src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/patagonia_item_2.png" />
+          <p>Women Ridge Flow Shirt<br/>₩89,000
+          </p>
+        </div>
+        <div>
+          <img src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/patagonia_item_3.png" />
+          <p>Women All Seasons Hemp Canvas Shorts<br/>₩119,000
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
